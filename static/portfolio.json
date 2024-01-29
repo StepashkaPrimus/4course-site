@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "ПОЛЕ ЧУДЕС",
+      "description" : "Стань победителем по жизни",
+      "image": "image CD1.png",
+      "link": "https://github.com/StepashkaPrimus/Step100000000.git"
+    },
+    {
+      "name": "МАГАЗИН ПО ПРОДАЖЕ ИГР",
+      "description" : "ПРОДАВАЙ,ПОКУПАЙ,КАЙФУЙ",
+      "image": "Rectangle 5.png",
+      "link": "https://github.com/StepashkaPrimus/Step100000000.git"
+    },
+    {
+      "name": "СОЦ. СЕТЬ ФИТНЕСС ЦЕНТРА",
+      "description" : "ТРЕНИРУЙСЯ, ОБЩАЙСЯ, РАЗВИВАЙСЯ",
+      "image": "Rectangle 9.png",
+      "link": "https://github.com/StepashkaPrimus/Step100000000.git"
+    },
+    {
+      "name": "Система электронной коммерции для продажи товаров",
+      "description" : "РЕГИСТРИРУЙСЯ, ПОКУПАЙ, ПОЛУЧАЙ",
+      "image": "Rectangle 8.png",
+      "link": "https://github.com/StepashkaPrimus/Step100000000.git"
+    }
+  ]
+}

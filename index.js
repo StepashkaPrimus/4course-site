@@ -1,12 +1,21 @@
-const http = require('http');
+const express = require('express');
+const fs = require('fs').promises;
+const cors = require('cors');
+const app = express();
 const PORT = 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!');
-});
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+async function getProjectsFromFile(){
+    return JSON.parse(await fs.readFile('./static/portfolio.json', 'utf8'));
+}
+
+app.use(cors());
+
+app.get('/projects', async (req, res)=>{
+    res.send(await getProjectsFromFile());
+})
+
+app.listen(PORT, (error) => {
+    if (!error) console.log(`Server is running on http://localhost:${PORT}`)
+    else console.log("Error occurred, server can't start", error);
 });
